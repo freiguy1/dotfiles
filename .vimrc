@@ -21,6 +21,8 @@ Plugin 'kien/ctrlp.vim'
 
 Plugin 'pangloss/vim-javascript'
 
+Plugin 'cakebaker/scss-syntax.vim'
+
 call vundle#end()
 
 filetype plugin indent on
