@@ -23,6 +23,8 @@ Plugin 'pangloss/vim-javascript'
 
 Plugin 'cakebaker/scss-syntax.vim'
 
+Plugin 'scrooloose/syntastic'
+
 call vundle#end()
 
 filetype plugin indent on
@@ -35,19 +37,17 @@ set list
 set expandtab
 set softtabstop=4
 set shiftwidth=4
+
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+
+
 colorscheme evening
 vnoremap < <gv " better indentation
 vnoremap > >gv " better indentation
 set wildignore+=target,*.swp
-"set autoindent 
-"set smartindent
-"set smarttab
-"set shiftwidth=4
-"set softtabstop=4
-"set tabstop=4
-"set expandtab
 
-"autocmd FileType scala setlocal shiftwidth=2 softtabstop=2 expandtab
-
-"imap <C-BS> <C-W>
-
+nmap j gj
+nmap k gk
