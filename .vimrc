@@ -42,7 +42,7 @@ set smartcase
 set hlsearch
 
 
-colorscheme evening
+colorscheme desert
 vnoremap < <gv " better indentation
 vnoremap > >gv " better indentation
 set wildignore+=target,*.swp
