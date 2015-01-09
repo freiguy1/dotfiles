@@ -18,15 +18,13 @@ wicd-client --tray &
 #xrdb ~/.Xresources &
 # key repeat faster
 xset r rate 200 20
-# set screen timeout 4 minutes
-xset s 240 240
+# set powersaving to low power
+~/scripts/powersave.sh low
 # audio daemon
 pulseaudio --start
 # background
 sh ~/.fehbg &
 # set up the daemon for auto-mounting
 pcmanfm -d &
-# suspend and lock after 10 min
-xautolock -time 10 -locker "~/scripts/i3exit.sh suspend" &
 
 exec i3
