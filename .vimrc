@@ -42,10 +42,13 @@ set smartcase
 set hlsearch
 
 
-colorscheme desert
+colorscheme slate
+hi Visual cterm=reverse ctermbg=Black
+
 vnoremap < <gv " better indentation
 vnoremap > >gv " better indentation
 set wildignore+=target,*.swp
 
 nmap j gj
 nmap k gk
+
