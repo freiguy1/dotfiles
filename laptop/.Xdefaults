@@ -2,8 +2,8 @@
 
 !eURxvt*geometry:                115x40
 !URxvt*font: xft:Liberation Mono:pixelsize=22:antialias=false:hinting=true
-URxvt*font: xft:Inconsolata:pixelsize=26:antialias=true:hinting=true
-URxvt*boldFont: xft:Inconsolata:bold:pixelsize=26:antialias=false:hinting=true
+URxvt*font: xft:Inconsolata:pixelsize=30:antialias=true:hinting=true
+URxvt*boldFont: xft:Inconsolata:bold:pixelsize=30:antialias=false:hinting=true
 !URxvt*boldFont: xft:Liberation Mono:bold:pixelsize=22:antialias=false:hinting=true
 !eURxvt*depth:                24
 URxvt*borderless: 1
@@ -39,12 +39,16 @@ URxvt.iso14755_52: false
 URxvt*background: #2B2B2B
 URxvt*foreground: #DEDEDE
 
+URxvt*cursorColor: #00FF00
+
 !eURxvt*colorUL: #86a2b0
 
 ! black
 ! URxvt*color0  : #2E3436
-URxvt*color8  : #555753
-URxvt*color0  : #111111
+! URxvt*color8  : #555753
+! URxvt*color0  : #111111
+URxvt*color8  : #000000
+URxvt*color0  : #000000
 ! red
 URxvt*color1  : #D06060
 URxvt*color9  : #EF2929

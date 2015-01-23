@@ -42,8 +42,9 @@ set smartcase
 set hlsearch
 
 
-colorscheme slate
-hi Visual cterm=reverse ctermbg=Black
+colorscheme default
+hi Visual cterm=reverse ctermbg=none ctermfg=none
+hi Search cterm=reverse ctermbg=none ctermfg=none
 
 vnoremap < <gv " better indentation
 vnoremap > >gv " better indentation
