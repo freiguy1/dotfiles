@@ -53,3 +53,5 @@ set wildignore+=target,*.swp
 nmap j gj
 nmap k gk
 
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
