@@ -19,10 +19,10 @@ case "$1" in
         lock && systemctl hibernate
         ;;
     reboot)
-        pkill chrome && systemctl reboot
+        systemctl reboot
         ;;
     shutdown)
-        pkill chrome && systemctl poweroff
+        systemctl poweroff
         ;;
     *)
         echo "Usage: $0 {lock|logout|suspend|hibernate|reboot|shutdown}"

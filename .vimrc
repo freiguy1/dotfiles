@@ -52,7 +52,7 @@ hi CursorLineNR ctermbg=8 ctermfg=7 cterm=bold
 
 vnoremap < <gv " better indentation
 vnoremap > >gv " better indentation
-set wildignore+=target,*.swp
+set wildignore+=target,*.swp,node_modules
 
 nmap j gj
 nmap k gk
