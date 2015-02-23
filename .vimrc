@@ -23,6 +23,8 @@ Plugin 'pangloss/vim-javascript'
 
 Plugin 'cakebaker/scss-syntax.vim'
 
+Plugin 'ekalinin/Dockerfile.vim'
+
 call vundle#end()
 
 filetype plugin indent on
