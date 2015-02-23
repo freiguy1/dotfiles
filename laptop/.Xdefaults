@@ -10,14 +10,14 @@ URxvt*borderless: 1
 URxvt*scrollBar:            false
 URxvt*saveLines:  2000
 URxvt.transparent:      true
-URxvt*.shading: 10
+URxvt*.shading: 15
 
 
 ! Meta modifier for keybindings
 !URxvt.modifier: super
 
 !! perl extensions
-!eURxvt.perl-ext:             default,url-select,clipboard
+eURxvt.perl-ext:             default,url-select,clipboard
 
 ! url-select (part of urxvt-perls package)
 !eURxvt.keysym.M-u:           perl:url-select:select_next
@@ -36,8 +36,8 @@ URxvt.iso14755_52: false
 
 !urxvt color scheme:
 
-URxvt*background: #2B2B2B
-URxvt*foreground: #DEDEDE
+URxvt*background: #002b36
+URxvt*foreground: #839496
 
 URxvt*cursorColor: #00FF00
 
@@ -47,26 +47,26 @@ URxvt*cursorColor: #00FF00
 ! URxvt*color0  : #2E3436
 ! URxvt*color8  : #555753
 ! URxvt*color0  : #111111
-URxvt*color8  : #000000
-URxvt*color0  : #000000
+URxvt*color8  : #231a10
+URxvt*color0  : #002b36
 ! red
-URxvt*color1  : #D06060
-URxvt*color9  : #EF2929
+URxvt*color1  : #dc322f
+URxvt*color9  : #dc322f
 ! green
-URxvt*color2  : #4E9A06
-URxvt*color10 : #8AE234
+URxvt*color2  : #859900
+URxvt*color10 : #859900
 ! yellow
-URxvt*color3  : #C4A000
-URxvt*color11 : #FCE94F
+URxvt*color3  : #b58900
+URxvt*color11 : #b58900
 ! blue
-URxvt*color4  : #3465A4
-URxvt*color12 : #729FCF
+URxvt*color4  : #268bd2
+URxvt*color12 : #268bd2
 ! magenta
-URxvt*color5  : #75507B
-URxvt*color13 : #AD7FA8
+URxvt*color5  : #d33682
+URxvt*color13 : #d33682
 ! cyan
-URxvt*color6  : #06989A
-URxvt*color14 : #34E2E2
+URxvt*color6  : #2aa198
+URxvt*color14 : #2aa198
 ! white
-URxvt*color7  : #D3D7CF
-URxvt*color15 : #EEEEEC
+URxvt*color7  : #839496
+URxvt*color15 : #83a1a1
