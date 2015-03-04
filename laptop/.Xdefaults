@@ -9,8 +9,8 @@ URxvt*boldFont: xft:Inconsolata:bold:pixelsize=30:antialias=false:hinting=true
 URxvt*borderless: 1
 URxvt*scrollBar:            false
 URxvt*saveLines:  2000
-URxvt.transparent:      true
-URxvt*.shading: 15
+! URxvt.transparent:      true
+! URxvt*.shading: 15
 
 
 ! Meta modifier for keybindings
@@ -47,7 +47,7 @@ URxvt*cursorColor: #00FF00
 ! URxvt*color0  : #2E3436
 ! URxvt*color8  : #555753
 ! URxvt*color0  : #111111
-URxvt*color8  : #231a10
+URxvt*color8  : #073642
 URxvt*color0  : #002b36
 ! red
 URxvt*color1  : #dc322f
