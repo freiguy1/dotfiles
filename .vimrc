@@ -38,12 +38,15 @@ set list
 set expandtab
 set softtabstop=4
 set shiftwidth=4
-
 set incsearch
 set ignorecase
 set smartcase
 set hlsearch
 set cursorline
+
+" Folding schtuff
+set fdm=syntax
+set foldnestmax=3
 
 
 colorscheme default
@@ -53,6 +56,7 @@ hi CursorLine ctermbg=8 cterm=none
 hi LineNR ctermbg=8 ctermfg=7
 hi CursorLineNR ctermbg=8 ctermfg=7 cterm=bold
 hi NonText ctermfg=8
+hi Folded ctermbg=0
 
 vnoremap < <gv " better indentation
 vnoremap > >gv " better indentation
