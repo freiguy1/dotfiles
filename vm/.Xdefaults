@@ -1,0 +1,67 @@
+! urxvt
+
+!eURxvt*geometry:                115x40
+URxvt*font: xft:Inconsolata:pixelsize=15:antialias=true:hinting=true
+URxvt*boldFont: xft:Inconsolata:bold:pixelsize=15:antialias=true:hinting=true
+!eURxvt*depth:                24
+URxvt*borderless: 1
+URxvt*scrollBar:            false
+URxvt*saveLines:  2000
+URxvt.transparent:      true
+URxvt*.shading: 15
+
+
+! Meta modifier for keybindings
+!URxvt.modifier: super
+
+!! perl extensions
+eURxvt.perl-ext:             default,url-select,clipboard
+
+! url-select (part of urxvt-perls package)
+!eURxvt.keysym.M-u:           perl:url-select:select_next
+!eURxvt.url-select.autocopy:  true
+!eURxvt.url-select.button:    2
+!eURxvt.url-select.launcher:  google-chrome-stable
+!eURxvt.url-select.underline: true
+
+! Nastavuje kopirovani
+URxvt.keysym.Control-V: perl:clipboard:paste
+URxvt.keysym.Control-C:   perl:clipboard:copy
+
+! disable the stupid ctrl+shift 'feature'
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+!urxvt color scheme:
+
+URxvt*background: #151515
+URxvt*foreground: #839496
+
+URxvt*cursorColor: #f5f5f5
+
+!eURxvt*colorUL: #86a2b0
+
+! black
+URxvt*color8  : #303030
+URxvt*color0  : #151515
+! red
+URxvt*color1  : #ac4142
+URxvt*color9  : #d28445
+! green
+URxvt*color2  : #90a959
+URxvt*color10 : #90a959
+! yellow
+URxvt*color3  : #f4bf75
+URxvt*color11 : #f4bf75
+! blue
+URxvt*color4  : #6a9fb5
+URxvt*color12 : #6a9fb5
+! magenta
+URxvt*color5  : #aa759f
+URxvt*color13 : #aa759f
+! cyan
+URxvt*color6  : #75b5aa
+URxvt*color14 : #75b5aa
+! white
+URxvt*color7  : #f5f5f5
+URxvt*color15 : #f5f5f5
