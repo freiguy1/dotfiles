@@ -43,6 +43,8 @@ set ignorecase
 set smartcase
 set hlsearch
 set cursorline
+set splitbelow
+set splitright
 
 " Folding schtuff
 set fdm=syntax
