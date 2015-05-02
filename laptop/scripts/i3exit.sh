@@ -1,8 +1,10 @@
 #!/bin/sh
 lock() {
-    # Add a small delay to prevent suspend races
-    # https://bugs.launchpad.net/ubuntu/+source/unity-2d/+bug/830348
-    i3lock -i /home/freied/.config/wallpapers/grey_wash_wall.png -t && sleep 1
+    scrot /tmp/screen.png
+    convert /tmp/screen.png -scale 10% -scale 1000% /tmp/screen.png
+    [[ -f $HOME/.config/wallpapers/lock-icon.png ]] && convert /tmp/screen.png $HOME/.config/wallpapers/lock-icon.png -gravity center -composite -matte /tmp/screen.png
+    i3lock  -i /tmp/screen.png && sleep 1
+    # i3lock -i /home/freied/.config/wallpapers/grey_wash_wall.png -t && sleep 1
 }
 
 case "$1" in
