@@ -23,7 +23,9 @@ Plugin 'pangloss/vim-javascript'
 
 Plugin 'cakebaker/scss-syntax.vim'
 
-Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'tpope/vim-rails'
+
+Plugin 'tpope/vim-sleuth'
 
 call vundle#end()
 
