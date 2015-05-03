@@ -67,7 +67,7 @@ hi Folded ctermbg=0
 
 vnoremap < <gv " better indentation
 vnoremap > >gv " better indentation
-set wildignore+=target,*.swp,node_modules
+set wildignore+=target,*.swp,node_modules,tmp,log
 
 nmap j gj
 nmap k gk
