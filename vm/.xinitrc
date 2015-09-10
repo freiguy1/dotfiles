@@ -26,13 +26,14 @@ xset r rate 200 20
 # set background to windows blue ;)
 xsetroot -solid "#004e98"
 
+# set up the daemon for auto-mounting
+pcmanfm -d &
+
 # set powersaving to low power
 # ~/scripts/powersave.sh low
 # audio daemon
 # pulseaudio --start
 # background
 # sh ~/.fehbg &
-# set up the daemon for auto-mounting
-# pcmanfm -d &
 
 exec i3

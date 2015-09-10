@@ -78,7 +78,7 @@ bindsym $mod+f fullscreen
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+z layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -166,6 +166,7 @@ bar {
 
 # Stuff Ethan Added
 
+
 # start hangouts on workspace 4
 for_window [title="Hangouts"] move container to workspace 4
 
@@ -190,6 +191,7 @@ for_window [title="Wicd"] floating enable
 
 # Special keys
 bindsym $mod+c exec google-chrome-stable
+bindsym $mod+e exec pcmanfm
 
 # Colors:
 # class                 border  backgr. text    indicator
