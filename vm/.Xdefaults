@@ -15,7 +15,7 @@ URxvt*.shading: 15
 !URxvt.modifier: super
 
 !! perl extensions
-eURxvt.perl-ext:             default,url-select,clipboard
+URxvt.perl-ext:             default,url-select,clipboard
 
 ! url-select (part of urxvt-perls package)
 !eURxvt.keysym.M-u:           perl:url-select:select_next
@@ -25,8 +25,8 @@ eURxvt.perl-ext:             default,url-select,clipboard
 !eURxvt.url-select.underline: true
 
 ! Nastavuje kopirovani
-URxvt.keysym.Control-V: perl:clipboard:paste
-URxvt.keysym.Control-C:   perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.keysym.Shift-Control-C:   perl:clipboard:copy
 
 ! disable the stupid ctrl+shift 'feature'
 URxvt.iso14755: false
