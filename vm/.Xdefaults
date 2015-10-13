@@ -1,8 +1,8 @@
 ! urxvt
 
 !eURxvt*geometry:                115x40
-URxvt*font: xft:Inconsolata:pixelsize=15:antialias=true:hinting=true
-URxvt*boldFont: xft:Inconsolata:bold:pixelsize=15:antialias=true:hinting=true
+URxvt*font: xft:Inconsolata:pixelsize=14:antialias=true:hinting=true
+URxvt*boldFont: xft:Inconsolata:bold:pixelsize=14:antialias=true:hinting=true
 !eURxvt*depth:                24
 URxvt*borderless: 1
 URxvt*scrollBar:            false
