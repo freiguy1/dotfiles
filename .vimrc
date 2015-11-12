@@ -65,7 +65,7 @@ hi LineNR ctermbg=8 ctermfg=7
 hi CursorLineNR ctermbg=8 ctermfg=7 cterm=bold
 hi NonText ctermfg=8
 hi Folded ctermbg=0
-hi MatchParen cterm=reverse ctermbg=none ctermfg=none
+hi MatchParen cterm=reverse ctermbg=3 ctermfg=0
 
 vnoremap < <gv " better indentation
 vnoremap > >gv " better indentation
