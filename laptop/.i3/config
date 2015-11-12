@@ -30,7 +30,7 @@ font pango:Droid Sans Mono $textsize
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym Mod1+F4 kill
@@ -176,6 +176,7 @@ for_window [class="Firefox"] border none
 
 # 1px Border Windows
 for_window [class="URxvt"] border 1pixel
+for_window [class="Termite"] border 1pixel
 
 # floating windows
 for_window [class="Galculator"] floating enable
