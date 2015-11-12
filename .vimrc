@@ -51,10 +51,11 @@ set splitright
 " Folding schtuff
 set fdm=syntax
 set foldnestmax=3
+set nofoldenable
 " Don't screw up folds when inserting text that might affect them, until
 " leaving insert mode. Foldmethod is local to the window.
-autocmd InsertEnter * let w:last_fdm=&foldmethod | setlocal foldmethod=manual
-autocmd InsertLeave * let &l:foldmethod=w:last_fdm
+" autocmd InsertEnter * let w:last_fdm=&foldmethod | setlocal foldmethod=manual
+" autocmd InsertLeave * let &l:foldmethod=w:last_fdm
 
 colorscheme default
 hi Visual cterm=reverse ctermbg=none ctermfg=none
@@ -64,6 +65,7 @@ hi LineNR ctermbg=8 ctermfg=7
 hi CursorLineNR ctermbg=8 ctermfg=7 cterm=bold
 hi NonText ctermfg=8
 hi Folded ctermbg=0
+hi MatchParen cterm=reverse ctermbg=none ctermfg=none
 
 vnoremap < <gv " better indentation
 vnoremap > >gv " better indentation
