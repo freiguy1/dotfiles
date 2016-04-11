@@ -25,6 +25,8 @@ Plugin 'cakebaker/scss-syntax.vim'
 
 Plugin 'tpope/vim-sleuth'
 
+Plugin 'elixir-lang/vim-elixir'
+
 call vundle#end()
 
 filetype plugin indent on
@@ -67,7 +69,7 @@ hi MatchParen cterm=reverse ctermbg=3 ctermfg=0
 
 vnoremap < <gv " better indentation
 vnoremap > >gv " better indentation
-set wildignore+=target,*.swp,node_modules,tmp,log
+set wildignore+=target,*.swp,node_modules,tmp,log,deps
 
 nmap j gj
 nmap k gk
