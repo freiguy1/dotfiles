@@ -26,5 +26,7 @@ pulseaudio --start
 sh ~/.fehbg &
 # set up the daemon for auto-mounting
 pcmanfm -d &
+# correct synaptics touchpad settings
+synclient TapButton2=2 TapButton1=1 HorizTwoFingerScroll=1
 
 exec i3
