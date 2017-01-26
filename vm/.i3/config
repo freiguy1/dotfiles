@@ -171,6 +171,7 @@ bar {
 for_window [title="Hangouts"] move container to workspace 4
 
 # 0px Border Windows
+# for_window [class="chromium"] border none
 for_window [class="Chromium"] border none
 for_window [title="Google Chrome"] border none
 for_window [class="Firefox"] border none
@@ -191,7 +192,7 @@ for_window [title="Wicd"] floating enable
 # floating_minimum_size 400 x 600
 
 # Special keys
-bindsym $mod+c exec google-chrome-stable
+bindsym $mod+c exec chromium
 bindsym $mod+e exec pcmanfm
 
 # Colors:

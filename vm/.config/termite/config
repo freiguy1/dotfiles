@@ -2,7 +2,7 @@
 
 cursor_blink = off
 
-font = Inconsolata 10
+font = Inconsolata 14
 
 [colors]
 foreground = #c5c8c6
