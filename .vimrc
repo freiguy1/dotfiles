@@ -69,7 +69,7 @@ hi MatchParen cterm=reverse ctermbg=3 ctermfg=0
 
 vnoremap < <gv " better indentation
 vnoremap > >gv " better indentation
-set wildignore+=target,*.swp,node_modules,tmp,log,deps
+set wildignore+=target,*.swp,node_modules,tmp,log,deps,build
 
 nmap j gj
 nmap k gk
