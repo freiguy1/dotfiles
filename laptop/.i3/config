@@ -167,7 +167,7 @@ bar {
 # Stuff Ethan Added
 
 # start hangouts on workspace 4
-for_window [title="Hangouts"] move container to workspace 4
+# for_window [title="Hangouts"] move container to workspace 4
 
 # 0px Border Windows
 for_window [class="Chromium"] border none
@@ -197,7 +197,8 @@ bindsym XF86AudioLowerVolume exec --no-startup-id "amixer sset -q Master,0 5%-"
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 15
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 15
 
-bindsym $mod+c exec google-chrome-stable --force-device-scale-factor=1.5
+# bindsym $mod+c exec google-chrome-stable --force-device-scale-factor=1.5
+bindsym $mod+c exec firefox
 bindsym $mod+t exec ~/scripts/toggletouchpad.sh
 bindsym $mod+e exec pcmanfm
 
