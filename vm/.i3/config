@@ -9,10 +9,9 @@
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
-set $textsize 9
+set $textsize 10
 
 set $mod Mod4
-
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -192,7 +191,7 @@ for_window [title="Wicd"] floating enable
 # floating_minimum_size 400 x 600
 
 # Special keys
-bindsym $mod+c exec chromium
+bindsym $mod+c exec firefox
 bindsym $mod+e exec pcmanfm
 
 # Colors:
