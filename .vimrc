@@ -7,13 +7,7 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'ervandew/supertab'
-
-Plugin 'derekwyatt/vim-scala'
-
 Plugin 'othree/html5.vim'
-
-Plugin 'gre/play2vim'
 
 Plugin 'wting/rust.vim'
 
@@ -24,8 +18,6 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'cakebaker/scss-syntax.vim'
 
 Plugin 'tpope/vim-sleuth'
-
-Plugin 'elixir-lang/vim-elixir'
 
 Plugin 'elmcast/elm-vim'
 
