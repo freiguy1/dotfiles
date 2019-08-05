@@ -52,11 +52,11 @@ set nofoldenable
 " autocmd InsertLeave * let &l:foldmethod=w:last_fdm
 
 colorscheme default
-hi Visual cterm=reverse ctermbg=none ctermfg=none
-hi Search cterm=reverse ctermbg=none ctermfg=none
-hi CursorLine ctermbg=8 cterm=none
-hi LineNR ctermbg=8 ctermfg=7
-hi CursorLineNR ctermbg=8 ctermfg=7 cterm=bold
+hi Visual ctermbg=8
+hi Search ctermbg=8
+hi CursorLine ctermbg=237 cterm=none
+hi LineNR ctermbg=236 ctermfg=8
+hi CursorLineNR ctermbg=237 ctermfg=8 cterm=bold
 hi NonText ctermfg=8
 hi Folded ctermbg=0
 hi MatchParen cterm=reverse ctermbg=3 ctermfg=0
