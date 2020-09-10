@@ -37,6 +37,7 @@ syntax on
 set ruler
 set number
 set mouse=a
+set term=xterm
 set listchars=eol:¬
 set list
 set expandtab
@@ -62,9 +63,9 @@ set nofoldenable
 colorscheme default
 hi Visual cterm=reverse ctermbg=none ctermfg=none
 hi Search cterm=reverse ctermbg=none ctermfg=none
-hi CursorLine ctermbg=8 cterm=none
-hi LineNR ctermbg=8 ctermfg=7
-hi CursorLineNR ctermbg=8 ctermfg=7 cterm=bold
+hi CursorLine ctermbg=0 cterm=none
+hi LineNR ctermbg=0 ctermfg=7
+hi CursorLineNR ctermbg=0 ctermfg=7 cterm=bold
 hi NonText ctermfg=8
 hi Folded ctermbg=0
 hi MatchParen cterm=reverse ctermbg=3 ctermfg=0

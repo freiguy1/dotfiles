@@ -1,6 +1,6 @@
 #!/bin/sh
 lock() {
-    scrot /tmp/screen.png
+    scrot -o /tmp/screen.png
     convert /tmp/screen.png -scale 10% -scale 1000% /tmp/screen.png
     [[ -f $HOME/.config/wallpapers/lock-icon.png ]] && convert /tmp/screen.png $HOME/.config/wallpapers/lock-icon.png -gravity center -composite -matte /tmp/screen.png
     i3lock  -i /tmp/screen.png && sleep 1
