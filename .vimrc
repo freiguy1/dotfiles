@@ -9,7 +9,7 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'othree/html5.vim'
 
-Plugin 'wting/rust.vim'
+Plugin 'rust-lang/rust.vim'
 
 Plugin 'kien/ctrlp.vim'
 
@@ -21,6 +21,10 @@ Plugin 'tpope/vim-sleuth'
 
 Plugin 'elmcast/elm-vim'
 
+Plugin 'dense-analysis/ale'
+
+Plugin 'zig-lang/zig.vim'
+
 call vundle#end()
 
 filetype plugin indent on
@@ -29,6 +33,7 @@ syntax on
 set ruler
 set number
 set mouse=a
+set ttymouse=sgr
 set listchars=eol:¬
 set list
 set expandtab
@@ -41,15 +46,7 @@ set hlsearch
 set cursorline
 set splitbelow
 set splitright
-
-" Folding schtuff
-set fdm=syntax
-set foldnestmax=3
-set nofoldenable
-" Don't screw up folds when inserting text that might affect them, until
-" leaving insert mode. Foldmethod is local to the window.
-" autocmd InsertEnter * let w:last_fdm=&foldmethod | setlocal foldmethod=manual
-" autocmd InsertLeave * let &l:foldmethod=w:last_fdm
+set linebreak "only splits wrapped lines at whitespace
 
 colorscheme default
 hi Visual ctermbg=8
@@ -69,4 +66,7 @@ nmap j gj
 nmap k gk
 
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+let g:elm_format_autosave = 1
+let g:rustfmt_autosave = 1
+let g:ale_set_highlights = 0
 
