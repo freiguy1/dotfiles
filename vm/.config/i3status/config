@@ -14,29 +14,33 @@ general {
         interval = 5
 }
 
-# order += "ipv6"
+order += "memory"
 order += "disk /"
+order += "load"
+order += "tztime local"
+#
+# order += "volume master"
+# order += "ethernet enp4s0"
+# order += "ipv6"
 # order += "run_watch DHCP"
 # order += "run_watch VPN"
 # order += "wireless wlp1s0"
-# order += "ethernet eth0"
 # order += "battery 1"
-order += "load"
-# order += "volume master"
-order += "tztime local"
 
 wireless wlp1s0 {
         format_up = "W: (%quality at %essid) %ip"
         format_down = "W: down"
 }
 
-ethernet eth0 {
+ethernet enp4s0 {
         # if you use %speed, i3status requires root privileges
-        format_up = "E: %ip (%speed)"
+        format_up = "IP: %ip"
         format_down = "E: down"
 }
 
 battery 1 {
+        hide_seconds = true
+        integer_battery_capacity = true
         format = "%status %percentage %remaining"
 }
 
@@ -65,4 +69,8 @@ volume master {
         device = "default"
         mixer = "Master"
         mixer_idx = 0
+}
+
+memory {
+        format = "%used / %total"
 }
