@@ -198,7 +198,7 @@ client.unfocused        #202020 #202020 #888888 #292d2e
 client.urgent           #2f343a #900000 #f5f5f5 #900000
 client.placeholder      #000000 #0c0c0c #f5f5f5 #202020
 
-set $mode_power (s) suspend, (r) reboot, (Shift+s) shutdown
+set $mode_power (r) reboot, (Shift+s) shutdown
 mode "$mode_power" {
     bindsym r exec reboot, mode "default"
     bindsym Shift+s exec poweroff, mode "default"
