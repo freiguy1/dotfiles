@@ -227,8 +227,8 @@ bindsym $mod+Escape mode "$mode_power"
 
 set $mode_monitors (b) both monitors, (r) right monitor
 mode "$mode_monitors" {
-    bindsym b exec ~/.screenlayout/default.sh, mode "default"
-    bindsym r exec ~/.screenlayout/right-only.sh, mode "default"
+    bindsym b exec ~/.screenlayout/default.sh && i3-msg restart, mode "default"
+    bindsym r exec ~/.screenlayout/right-only.sh && i3-msg restart, mode "default"
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"

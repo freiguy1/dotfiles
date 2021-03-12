@@ -34,7 +34,7 @@ set ruler
 set number
 set mouse=a
 set ttymouse=sgr
-set listchars=eol:¬
+set listchars=trail:•,extends:•,precedes:•,space:•,tab:>- "eol:¬,
 set list
 set expandtab
 set softtabstop=4
@@ -50,11 +50,17 @@ set linebreak "only splits wrapped lines at whitespace
 
 colorscheme default
 hi Visual ctermbg=8
-hi Search ctermbg=8
-hi CursorLine ctermbg=237 cterm=none
-hi LineNR ctermbg=236 ctermfg=8
-hi CursorLineNR ctermbg=237 ctermfg=8 cterm=bold
-hi NonText ctermfg=8
+hi Search ctermbg=238
+"current line with cursor
+hi CursorLine ctermbg=235 cterm=none
+"line numbering on left
+hi LineNR ctermbg=235 ctermfg=8
+"current line with cursor line numbers
+hi CursorLineNR ctermbg=236 ctermfg=8 cterm=bold
+" Color for whitespace
+hi NonText ctermfg=237
+" Color for other whitespace
+hi SpecialKey ctermfg=237
 hi Folded ctermbg=0
 hi MatchParen cterm=reverse ctermbg=3 ctermfg=0
 
