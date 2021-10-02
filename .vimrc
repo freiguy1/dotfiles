@@ -7,15 +7,9 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'ervandew/supertab'
-
-Plugin 'derekwyatt/vim-scala'
-
 Plugin 'othree/html5.vim'
 
-Plugin 'gre/play2vim'
-
-Plugin 'wting/rust.vim'
+Plugin 'rust-lang/rust.vim'
 
 Plugin 'kien/ctrlp.vim'
 
@@ -25,9 +19,11 @@ Plugin 'cakebaker/scss-syntax.vim'
 
 Plugin 'tpope/vim-sleuth'
 
-Plugin 'elixir-lang/vim-elixir'
-
 Plugin 'elmcast/elm-vim'
+
+Plugin 'dense-analysis/ale'
+
+Plugin 'zig-lang/zig.vim'
 
 call vundle#end()
 
@@ -37,8 +33,8 @@ syntax on
 set ruler
 set number
 set mouse=a
-set term=xterm
-set listchars=eol:¬
+set ttymouse=sgr
+set listchars=trail:•,extends:•,precedes:•,space:•,tab:>- "eol:¬,
 set list
 set expandtab
 set softtabstop=4
@@ -50,32 +46,33 @@ set hlsearch
 set cursorline
 set splitbelow
 set splitright
-
-" Folding schtuff
-set fdm=syntax
-set foldnestmax=3
-set nofoldenable
-" Don't screw up folds when inserting text that might affect them, until
-" leaving insert mode. Foldmethod is local to the window.
-" autocmd InsertEnter * let w:last_fdm=&foldmethod | setlocal foldmethod=manual
-" autocmd InsertLeave * let &l:foldmethod=w:last_fdm
+set linebreak "only splits wrapped lines at whitespace
 
 colorscheme default
-hi Visual cterm=reverse ctermbg=none ctermfg=none
-hi Search cterm=reverse ctermbg=none ctermfg=none
-hi CursorLine ctermbg=0 cterm=none
-hi LineNR ctermbg=0 ctermfg=7
-hi CursorLineNR ctermbg=0 ctermfg=7 cterm=bold
-hi NonText ctermfg=8
+hi Visual ctermbg=8
+hi Search ctermbg=238
+"current line with cursor
+hi CursorLine ctermbg=235 cterm=none
+"line numbering on left
+hi LineNR ctermbg=235 ctermfg=8
+"current line with cursor line numbers
+hi CursorLineNR ctermbg=236 ctermfg=8 cterm=bold
+" Color for whitespace
+hi NonText ctermfg=237
+" Color for other whitespace
+hi SpecialKey ctermfg=237
 hi Folded ctermbg=0
 hi MatchParen cterm=reverse ctermbg=3 ctermfg=0
 
 vnoremap < <gv " better indentation
 vnoremap > >gv " better indentation
-set wildignore+=target,*.swp,node_modules,tmp,log,deps,_build,elm-stuff
+set wildignore+=target,*.swp,node_modules,tmp,log,deps,_build,elm-stuff,zig-cache
 
 nmap j gj
 nmap k gk
 
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+let g:elm_format_autosave = 1
+let g:rustfmt_autosave = 1
+let g:ale_set_highlights = 0
 
