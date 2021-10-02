@@ -15,6 +15,7 @@ general {
 }
 
 # order += "ipv6"
+order += "memory"
 order += "disk /"
 # order += "run_watch DHCP"
 # order += "run_watch VPN"
@@ -67,4 +68,8 @@ volume master {
         device = "default"
         mixer = "Master"
         mixer_idx = 0
+}
+
+memory {
+        format = "%used / %total"
 }
