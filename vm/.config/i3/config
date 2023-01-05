@@ -180,10 +180,11 @@ bindsym $mod+c exec firefox
 bindsym $mod+e exec pcmanfm
 
 # 0px Border Windows
-for_window [class="Firefox"] border none
+# for_window [class="firefox"] border none
 
 # 1px Border Windows
 for_window [class="Alacritty"] border 1pixel
+for_window [class="firefox"] border 1pixel
 
 # floating windows
 for_window [class="Galculator"] floating enable
