@@ -31,4 +31,6 @@ pcmanfm -d &
 # correct synaptics touchpad settings
 synclient TapButton2=2 TapButton1=1 HorizTwoFingerScroll=1 HorizScrollDelta=200 VertScrollDelta=-200
 
+xrdb ~/.Xresources
+
 exec i3
