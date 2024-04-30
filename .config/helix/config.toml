@@ -1,0 +1,5 @@
+theme = "base16_default_dark"
+
+[editor]
+#adds "buffer" tabs at top
+bufferline = "always"
