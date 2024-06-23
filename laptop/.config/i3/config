@@ -191,16 +191,16 @@ for_window [class="Lightscreen"] floating enable
 # miscellaneous
 floating_minimum_size 400 x 600
 
-# Special keys
+# Special keys https://wiki.archlinux.org/title/Lenovo_ThinkPad_X13_Gen_3
 bindsym XF86AudioMute exec --no-startup-id ~/scripts/toggle-mute.sh
 bindsym XF86AudioRaiseVolume exec --no-startup-id "amixer sset -q Master,0 5%+"
 bindsym XF86AudioLowerVolume exec --no-startup-id "amixer sset -q Master,0 5%-"
 
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 15
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 15
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl -e --min-value=15 s 10%-
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl -e s +10%
 
 # bindsym $mod+c exec google-chrome-stable --force-device-scale-factor=1.5
-bindsym $mod+c exec firefox
+bindsym $mod+c exec MOZ_USE_XINPUT2=1 firefox
 bindsym $mod+t exec ~/scripts/toggletouchpad.sh
 bindsym $mod+e exec pcmanfm
 
@@ -240,3 +240,5 @@ client.unfocused        #202020 #202020 #888888 #292d2e
 client.urgent           #2f343a #900000 #f5f5f5 #900000
 client.placeholder      #000000 #0c0c0c #f5f5f5 #202020
 
+# auto start
+exec --no-startup-id nm-applet
