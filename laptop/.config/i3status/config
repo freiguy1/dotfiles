@@ -23,7 +23,7 @@ order += "wireless wlp1s0"
 # order += "ethernet eth0"
 order += "battery 0"
 order += "load"
-order += "volume master"
+# order += "volume master"
 order += "tztime local"
 
 wireless wlp1s0 {

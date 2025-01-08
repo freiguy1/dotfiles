@@ -1,24 +1,12 @@
-#!/bin/sh
-lock() {
-    scrot -o /tmp/screen.png
-    convert /tmp/screen.png -scale 10% -scale 1000% /tmp/screen.png
-    [[ -f $HOME/.config/wallpapers/lock-icon.png ]] && convert /tmp/screen.png $HOME/.config/wallpapers/lock-icon.png -gravity center -composite -matte /tmp/screen.png
-    i3lock  -i /tmp/screen.png && sleep 1
-    # i3lock -i /home/freied/.config/wallpapers/grey_wash_wall.png -t && sleep 1
-}
-
 case "$1" in
     lock)
-        lock
+        dm-tool switch-to-greeter
         ;;
     logout)
         i3-msg exit
         ;;
     suspend)
-        lock && systemctl suspend
-        ;;
-    hibernate)
-        lock && systemctl hibernate
+        systemctl suspend
         ;;
     reboot)
         systemctl reboot
@@ -27,7 +15,7 @@ case "$1" in
         systemctl poweroff
         ;;
     *)
-        echo "Usage: $0 {lock|logout|suspend|hibernate|reboot|shutdown}"
+        echo "Usage: $0 {lock|logout|suspend|reboot|shutdown}"
         exit 2
 esac
 
